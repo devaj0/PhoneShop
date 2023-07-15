@@ -249,3 +249,99 @@ body{
             background-color: #009acd;
         }	
         /*----------------------------*/
+        .coopen{
+            width:100%;
+            overflow:hidden;
+            background-color:#fff;
+            text-align:center;
+            border-radius:3px;
+            margin-bottom:20px;
+            }
+            
+            /*-----------------------------*/
+            .Special{
+            width: 100%;
+            min-height: 50px;
+            padding: 30px;
+            background-color: #fefefe;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+            line-height: 2;
+             }
+            
+            .Special .Special-tag{
+            width:150px;
+            height:50px;
+            top:8px;
+            right:-40px;
+            color:#fff;
+            background-color:#FC9294;	
+            position:absolute;
+            padding:10px;
+            font-size:18px;
+            text-align:center;
+            transform:rotate(45deg)
+            }
+            
+            .Special .col-md-6{
+            float:right;	
+            }
+            
+            .Special .Special-img{
+            padding:5px;
+            }
+            .Special .Special-content{
+            padding:5px;
+            }
+            .Special .Special-img img{
+                height: 180px;
+                object-fit: contain;
+            }
+            .Special-content del{
+            font-size:17px;
+            color:#616161;
+            }
+            .Special-content h4{
+            color:#FC9294;
+            }
+            
+            .Special-content ul li{
+            list-style:disc;
+            color:#616161;
+            }
+            
+            .Special-content span{
+            font-size:17px;
+            color:#616161;	
+            }
+            
+            .Special-content hr{
+            margin:0;
+            }
+                
+            .counter{
+            display:table;
+            margin:0 0 2px 2px;
+            }
+            
+            .counter div{
+            float:left;
+            
+            }
+            
+            .counter .jst-hours,.jst-minutes,.jst-seconds{
+            padding:3px;
+            color:#616161;
+            font-size:30px;
+            }
+            
+            .counter span{
+            margin-right:7px;		
+            }
+            .single-img img{
+                height: 300px;
+                object-fit: contain;
+            }
+            /*-----------------------------*/
