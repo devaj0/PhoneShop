@@ -18,3 +18,73 @@ body{
     
     .fa{margin:5px;}
     
+
+/* ............................ */
+.Nav{
+    padding:15px;
+    background-color:#fff;	
+    }
+    
+    .Nav .login{
+    text-align:center;
+    }
+    
+    .Nav .mybtn{
+    padding:5px;
+    color:#777;
+    background-color:transparent;
+    font-size: 13px;
+    transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -o-transition:all 0.2s;
+    }
+    
+    .Nav .mybtn i{
+    font-size:13px;
+    }
+    
+    .Nav .mybtn:hover{
+    color:#ec060a;
+    transition:all 0.4s;
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -o-transition:all 0.2s;
+    }
+    
+    .Nav form .form1{
+    display:table;
+    margin:0 auto;	
+    }
+    
+    .Nav form {
+    position:relative;
+    }
+    
+    .Nav form input{
+        width: 80%;
+        background-color: #fdfdfd;
+        color: 000;
+        border: none;
+        padding-right: 10px;
+        height: 40px;
+    }
+    
+    .Nav form input:focus{
+    border:none;
+    outline:none;
+    }
+    
+    .Nav form button{
+        border: none;
+        height: 40px;
+        position: absolute;
+        background-color: #fdfdfd;
+        color: #ccc8c8;
+        top: 0;
+        font-size: 20px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    
+    /*-----------------------------*/
