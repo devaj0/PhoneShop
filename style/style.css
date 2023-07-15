@@ -1,0 +1,20 @@
+
+
+
+body{
+    direction:rtl;
+    text-align:right;
+    margin:0;
+    padding:0;
+    font-family: 'Vazir',tahoma;
+    font-size:13px;
+    }
+    
+    li{list-style:none;}
+    
+    a,a:hover,a:focus{text-decoration:none;}
+    
+    ul{margin:0; padding:0;}
+    
+    .fa{margin:5px;}
+    
