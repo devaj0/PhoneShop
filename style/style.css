@@ -497,3 +497,21 @@ color:#222;
 font-size:30px;	
 padding:0 10px 0 10px;
 }
+/*-----------------------------*/
+.sam-baner,.apple-baner{	
+    border-radius:3px;	
+    position:relative;
+    margin-bottom:20px;
+    }
+    
+    .sam-baner h4,.apple-baner h4{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:14px;
+    background-color:#FC9294;
+    color:#fff;
+    padding:5px;
+    }
+    /*-----------------------------*/
+    
