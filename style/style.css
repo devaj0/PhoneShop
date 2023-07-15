@@ -345,3 +345,82 @@ body{
                 object-fit: contain;
             }
             /*-----------------------------*/
+            .one-slider{
+                width:100%;
+                min-height:100px;
+                background-color:#fffcfc;
+                margin-bottom:20px;
+                position:relative;
+                }
+                
+                .one-slider img{
+                width:100%;
+                height:auto;
+                padding-bottom:5px;
+                }
+                .one-slider img{
+                    height: 150px;
+                    object-fit: contain;
+                }
+                    
+                .one-slider h4{
+                    background-color: #FC9294;
+                    color: #fff;
+                    display: table;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    padding: 5px 5px 5px 5px;
+                    font-weight: normal;
+                }
+                
+                .one-slider h5{
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;	
+                }
+                
+                
+                .one-slider .owl-carousel{
+                padding:15px;
+                }
+                
+                .one-slider .item{
+                min-height:200px;	
+                text-align:center;	
+                padding:10px;
+                margin:5px;
+                transition:all 0.2s;
+                -webkit-transition:all 0.2s;
+                -moz-transition:all 0.2s;
+                -o-transition:all 0.2s;
+                }
+                
+                .one-slider .item span{
+                color:#FC9294;
+                font-size:16px;
+                }
+                
+                .one-slider .owl-carousel .owl-dots{
+                display:none;
+                }
+                
+                .one-slider .owl-nav .owl-prev span{
+                position:absolute;
+                right:0;
+                top:30%;
+                background-color:#fff;
+                color:#333;
+                font-size:30px;	
+                padding:0 10px 0 10px;
+                }
+                
+                
+                .one-slider .owl-nav .owl-next span{
+                position:absolute;
+                left:0;
+                top:30%;
+                background-color:#fff;
+                color:#333;
+                font-size:30px;	
+                padding:0 10px 0 10px;
+                }
