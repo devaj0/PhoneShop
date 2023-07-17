@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Sign</title>
+    <link rel="stylesheet" href="style/sign_style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="title"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign-In</div>
+      <form action="#">
+        <div class="field">
+          <input type="text" name="email" id="email" required />
+          <label>Email</label>
+        </div>
+        <div class="field">
+          <input type="text" name="user" id="user" required />
+          <label>Username</label>
+        </div>
+        <div class="field">
+          <input type="password" name="pass" id="pass" required />
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+        </div>
+        <div class="field">
+          <input
+            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+            type="submit"
+            value="Sign"
+            onclick="saveFile()"
+            id="bt"
+          />
+        </div>
+        <div class="signup-link">
+              you have account?<a href="./Log In.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
