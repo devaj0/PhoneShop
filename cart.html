@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <style>
-
-* {
+      * {
         box-sizing: border-box;
-        font-family: "Vazir", sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
       body {
         background: #c31432;
@@ -144,5 +143,35 @@
       <br />
       <a id="paymant" href="pay.html">Paymant</a>
     </div>
+
+    <script>
+      function calculateTotalPrice() {
+        let totalPrice = 0;
+        const productPrices = document.getElementsByClassName("product-price");
+
+        for (let i = 0; i < productPrices.length; i++) {
+          const price = parseInt(
+            productPrices[i].innerText.replace(" تومان", "").replace(",", "")
+          );
+          totalPrice += price;
+        }
+
+        document.getElementById("total-amount").innerText =
+          totalPrice.toLocaleString() + " تومان";
+      }
+
+      function removeProduct(event) {
+        const product = event.target.parentNode;
+        product.parentNode.removeChild(product);
+        calculateTotalPrice();
+      }
+
+      const removeButtons = document.getElementsByClassName("remove-product");
+      for (let i = 0; i < removeButtons.length; i++) {
+        removeButtons[i].addEventListener("click", removeProduct);
+      }
+
+      calculateTotalPrice();
+    </script>
   </body>
 </html>
