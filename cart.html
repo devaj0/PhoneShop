@@ -151,13 +151,13 @@
 
         for (let i = 0; i < productPrices.length; i++) {
           const price = parseInt(
-            productPrices[i].innerText.replace(" تومان", "").replace(",", "")
+            productPrices[i].innerText.replace(" $", "").replace(",", "")
           );
           totalPrice += price;
         }
 
         document.getElementById("total-amount").innerText =
-          totalPrice.toLocaleString() + " تومان";
+          totalPrice.toLocaleString() + " $";
       }
 
       function removeProduct(event) {
