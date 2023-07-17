@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>The order was successfully placed</title>
     <style>
       body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
@@ -46,9 +45,40 @@
     </style>
   </head>
   <body>
-    <h1>The order has been registered and paid successfully and will be delivered to you soon</h1>
+    <h1>
+      The order has been registered and paid successfully and will be delivered
+      to you soon
+    </h1>
     <h3>Tracking Code :</h3>
-      <p id="random-text"></p>
+    <p id="random-text"></p>
 
+    <script>
+      var texts = [
+        "54456670875567890876678",
+        "23487648533568975666543",
+        "11442343456546789876529",
+        "54567890309876543223345",
+        "67898764323457890543457",
+        "77532459076321246845678",
+        "16878652346845341354835",
+        "sdjsrgjdtkhtlyjpiy809tx",
+        "ae79pftdfhkdetus44545st",
+        "123qwrhesdymryjr5jyrr77",
+      ];
+
+      function getRandomText() {
+        var randomIndex = Math.floor(Math.random() * texts.length);
+        return texts[randomIndex];
+      }
+
+      function changeText() {
+        var randomText = getRandomText();
+        document.getElementById("random-text").innerHTML = randomText;
+      }
+
+      $(document).ready(function () {
+        changeText();
+      });
+    </script>
   </body>
 </html>
