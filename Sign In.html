@@ -191,5 +191,39 @@
         </div>
       </form>
     </div>
+
+    <script>
+      let saveFile = () => {
+        const email = document.getElementById("email");
+        const user = document.getElementById("user");
+        const pass = document.getElementById("pass");
+
+        let data =
+          "\r Email : " +
+          email.value +
+          " \r\n " +
+          " UserName : " +
+          user.value +
+          " \r\n " +
+          "Password : " +
+          pass.value;
+
+        const textToBLOB = new Blob([data], { type: "text/plain" });
+        const sFileName = "User-Sign-Info.txt";
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+          newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        } else {
+          newLink.href = window.URL.createObjectURL(textToBLOB);
+          newLink.style.display = "none";
+          document.body.appendChild(newLink);
+        }
+
+        newLink.click();
+      };
+    </script>
   </body>
 </html>
