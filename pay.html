@@ -1,95 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Page</title>
+    <title>Payment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
     <style>
-      .container {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f1f1f1;
-        border-radius: 5px;
-      }
-
-      h1 {
-        text-align: center;
-      }
-
-      .form-group {
-        margin-bottom: 20px;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-      }
-
-      button[type="submit"] {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-
-      button[type="submit"]:hover {
-        background-color: #45a049;
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #00416a;
+        background: -webkit-linear-gradient(to right, #90b1d2, #00416a);
+        background: linear-gradient(to right, #a3b9cf, #00416a);
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <h1>Payment Page</h1>
-      <form id="payment-form">
-        <div class="form-group">
-          <label for="name">Name on Card</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="card-number">Card Number</label>
-          <input type="text" id="card-number" name="card-number" required />
-        </div>
-        <div class="form-group">
-          <label for="expiration">Expiration Date</label>
-          <input
-            type="text"
-            id="expiration"
-            name="expiration"
-            placeholder="MM/YYYY"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" name="cvv" required />
-        </div>
-        <button type="submit">Submit Payment</button>
-      </form>
-    </div>
 
-    <script>
-      document
-        .getElementById("payment-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          var name = document.getElementById("name").value;
-          var cardNumber = document.getElementById("card-number").value;
-          var expiration = document.getElementById("expiration").value;
-          var cvv = document.getElementById("cvv").value;
-          alert("Payment Successful!");
-        });
-    </script>
+  <body>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center mb-4">Payment Page</h1>
+          <form>
+            <div class="mb-3">
+              <label style="font-weight: 900;" for="card-number" class="form-label">Card Number</label>
+              <input
+                type="text"
+                id="card-number"
+                class="form-control"
+                maxlength="16"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label style="font-weight: 900;" for="expiration-date" class="form-label"
+                > Expiration Date</label
+              >
+              <input
+                type="text"
+                id="expiration-date"
+                class="form-control"
+                placeholder="Example: 22/03"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label style="font-weight: 900;" for="cvv" class="form-label"
+                >
+                Password</label
+              >
+              <input
+                type="password"
+                id="cvv"
+                class="form-control"
+                maxlength="3"
+                required
+              />
+            </div>
+            <a href="success.html" class="btn btn-primary">Payment</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
